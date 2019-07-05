@@ -14,5 +14,5 @@ for x in dice: print('Die %d: %d' % x)
 res=reduce(lambda x, y: x[1]+y[1], dice)
 print('Total value:', res)
 
-if res > 6: print('You won!')
-else: print('You lost!')
+if res > 6: print(f'{name} won!')
+else: print(f'{name} lost!')
