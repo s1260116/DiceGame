@@ -7,4 +7,8 @@ dice = [(1,random.randint(1,6)), (2,random.randint(1,6))]
 
 for x in dice: print('Die %d: %d' % x)
 
-print('Total value:', reduce(lambda x, y: x[1]+y[1], dice))
+res=reduce(lambda x, y: x[1]+y[1], dice)
+print('Total value:', res)
+
+if res > 6: print('You won!')
+else: print('You lost!')
